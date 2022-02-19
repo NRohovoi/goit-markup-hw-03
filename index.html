@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студио</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -14,26 +15,26 @@
 
 <!-- Header -->
 
-    <header>
-
-<!-- Navigate -->
-
-        <nav>
-            <a class="logo" href="./index.html"> <span class="logo-accent">Web</span>Studio</a>
-            <ul class="list">
-                <li><a class="link current" href="./index.html">Студио</a> </li>
-                <li><a class="link" href="./portfolio.html">Портфолио</a> </li>
-                <li><a class="link" href="">Контакты</a> </li>
+    <header class="header">
+        <div class="container head">
+            <!-- Navigate -->
+    
+            <nav class="navigate">
+                <a class="logo" href="./index.html"> <span class="logo-accent">Web</span>Studio</a>
+                <ul class="list flex">
+                    <li class="nav-list"><a class="link nav current" href="./index.html">Студио</a> </li>
+                    <li class="nav-list"><a class="link nav" href="./portfolio.html">Портфолио</a> </li>
+                    <li class="nav-list"><a class="link nav" href="">Контакты</a> </li>
+                </ul>
+            </nav>
+    
+            <!-- Conract -->
+    
+            <ul class="list contact flex">
+                <li class="contact-list"><a class="link link-head-contact" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                <li class="contact-list"><a class="link link-head-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-
-<!-- Conract -->
-
-        <ul class="list">
-            <li><a class="link link-head-contact" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-            <li><a class="link link-head-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-
+        </div>
     </header>
 
 <!-- Main -->
@@ -42,98 +43,108 @@
 
 <!-- swcruon hero -->
 
-        <section class="hero-section">
+        <section class="section hero-section">
+            <div class="container">
             <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button class="btn hero-button" type="button">Заказать услугу</button>
+            </div>
         </section>
 
 <!-- section dignity -->
 
-        <section>
-            <h2 >Наши достоинcтва и личные качества</h2>
-            <ul class="list">
-                    <li>
+        <section class="section dignity">
+            <div class="container">
+            <h2 class="not-displayed">Наши достоинcтва и личные качества</h2>
+            <ul class="list flex dignity">
+                <li class="dignity-item">
                     <h3 class="dignity-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="dignity-item">
                     <h3 class="dignity-title">ПУНКТУАЛЬНОСТЬ</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="dignity-item">
                     <h3 class="dignity-title">ПЛАНИРОВАНИЕ</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="dignity-item">
                     <h3 class="dignity-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
 <!-- section specialization -->
 
-        <section>
+        <section class="section">
+            <div class="container">
             <h2 class="title-section">Чем мы заниаемся</h2>
-            <ul class="list">
-                <li>
+            <ul class="list flex">
+                <li class="specialization-item">
                     <img src="./images/img1box.jpg" alt="разробатываем код" width="370" height="294">
                 </li>
-                <li>
+                <li class="specialization-item">
                     <img src="./images/img2box.jpg" alt="адаптируем лоя разных устройств" width="370" height="294">
                 </li>
-                <li>
+                <li class="specialization-item">
                     <img src="./images/img3box.jpg" alt="стилизируем" width="370" height="294">
                 </li>
             </ul>
+            </div>
         </section>
 
 <!-- section workers -->
 
-        <section class="worker-section">
+        <section class="section worker-section">
+            <div class="container">
             <h2 class="title-section">Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <img src="./images/photo1.jpg" alt="фото Игорь Демьяненко"  width="270" height="260">
+            <ul class="list flex">
+                <li class="worker-item">
+                    <img class="worker-photo" src="./images/photo1.jpg" alt="фото Игорь Демьяненко"  width="270" height="260">
                     <h3 class="worker-name">Игорь Демьяненко</h3>
-                    <p class="worker-speciality"> Product Designer</p>
+                    <p class="paragraph worker-speciality"> Product Designer</p>
                 </li>
-                <li>
-                    <img src="./images/photo2.jpg" alt="фото Ольга Репина"  width="270" height="260">
+                <li class="worker-item">
+                    <img class="worker-photo" src="./images/photo2.jpg" alt="фото Ольга Репина"  width="270" height="260">
                     <h3 class="worker-name">Ольга Репина</h3>
-                    <p class="worker-speciality"> Frontend Developer</p>
+                    <p class="paragraph worker-speciality"> Frontend Developer</p>
                 </li>
-                <li>
-                    <img src="./images/photo3.jpg" alt="фото Николай Тарасовv"  width="270" height="260">
+                <li class="worker-item">
+                    <img class="worker-photo" src="./images/photo3.jpg" alt="фото Николай Тарасовv"  width="270" height="260">
                     <h3 class="worker-name">Николай Тарасов</h3>
-                    <p class="worker-speciality"> Marketing</p>
+                    <p class="paragraph worker-speciality"> Marketing</p>
                 </li>
-                <li>
-                    <img src="./images/photo4.jpg" alt="фото Михаил Ермаков"  width="270" height="260">
+                <li class="worker-item">
+                    <img class="worker-photo" src="./images/photo4.jpg" alt="фото Михаил Ермаков"  width="270" height="260">
                     <h3 class="worker-name">Михаил Ермаков</h3>
-                    <p class="worker-speciality"> UI Designer</p>
+                    <p class="paragraph worker-speciality"> UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
 <!-- Footer -->
 
     <footer class="foot">
+        <div class="container foot">
         <a class="logo white" href="./index.html"><span class="logo-accent">Web</span>Studio </a>
-    <address class="adr">
-        <ul class="list"> 
-            <li>
-                <a class="foot-contact map" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li>
-                <a class="foot-contact" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li>
-                <a class="foot-contact" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-        </ul>
-    </address>
+        <address class="adr">
+            <ul class="list"> 
+                <li class="adress-list">
+                    <a class="foot-contact map" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858" target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+                </li>
+                <li class="adress-list">
+                    <a class="foot-contact" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="adress-list">
+                    <a class="foot-contact" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+        </div>
     </footer>
 
 </body>
