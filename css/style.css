@@ -1,0 +1,205 @@
+:root {
+  --promary-text-color: #000000;
+  --link-text-color: #212121;
+  --contact-link-text-color: #757575;
+  --title-text-color: #000000;
+  --accent-colot: #2196f3;
+  --white-color: #ffffff;
+  --button-filter: #f5f4fa;
+  --second-bgc: #2f303a;
+}
+
+/* body */
+
+body {
+  background-color: var(--white-color);
+  color: var(--contact-link-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.logo,
+.link {
+  color: var(--link-text-color);
+
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.adr {
+  font-style: normal;
+}
+.btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--promary-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-accent {
+  color: var(--accent-colot);
+}
+
+/* Navigate */
+
+.link {
+  color: var(--link-text-color);
+}
+.link.current {
+  color: var(--accent-colot);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-colot);
+}
+.link-head-contact {
+  color: var(--contact-link-text-color);
+}
+.link-head-contact:hover,
+.link-head-contact:focus {
+  color: var(--accent-colot);
+}
+.head-contact,
+.nav-link {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* Footer */
+
+.foot {
+  background-color: var(--second-bgc);
+}
+.logo.white {
+  color: var(--white-color);
+}
+.foot-contact.map {
+  color: var(--white-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+.foot-contact {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Hero page */
+
+/* section hero */
+
+/* main */
+.title-section {
+  color: var(--link-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* hero section  */
+
+.hero-section {
+  background-color: var(--second-bgc);
+}
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  background-color: var(--accent-colot);
+  color: var(--white-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* section dignity */
+
+.dignity-title {
+  color: var(--link-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Section worker */
+
+.worker.section {
+  background-color: #f5f4fa;
+}
+.worker-name {
+  color: var(--link-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.worker-speciality {
+  color: var(--contact-link-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Portfolio page */
+
+/* button */
+
+.button-filter {
+  background-color: var(--button-filter);
+  color: var(--link-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.button-filter:hover {
+  color: var(--white-color);
+  background-color: var(--accent-colot);
+}
+
+/* portfolio section */
+
+.portfolio-item-title {
+  color: var(--link-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-sorting-item {
+  color: var(--contact-link-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
