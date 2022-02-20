@@ -303,6 +303,9 @@ nav > .logo {
 /* Portfolio page */
 
 /* button */
+.list.button-filter-list {
+  justify-content: center;
+}
 
 .button-filter {
   background-color: var(--button-filter);
@@ -330,6 +333,7 @@ nav > .logo {
   background-color: var(--white-color);
   margin-right: 30px;
   margin-bottom: 30px;
+  outline: 1px solid #eeeeee;
 }
 .portfolio-list:nth-child(3n) {
   margin-right: 0px;
