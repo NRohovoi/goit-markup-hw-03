@@ -78,11 +78,15 @@ body {
   align-items: center;
 }
 
+.not-displayed {
+  position: fixed;
+  transform: scale(0);
+}
+
 /* Header */
 
 .header {
-  border: 1px solid #ececec;
-  padding-top: 14px;
+  border-bottom: 1px solid #ececec;
 }
 
 .container.head {
@@ -95,8 +99,13 @@ body {
 
 .link.nav,
 .link.link-head-contact {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .list.contact {
   margin-left: auto;
@@ -160,13 +169,13 @@ nav > .logo {
 
 .foot {
   background-color: var(--second-bgc);
-}
-.container.foot {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo.white {
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
 
   color: var(--white-color);
 }
@@ -246,7 +255,7 @@ nav > .logo {
 }
 
 .list.dignity > .dignity-item {
-  flex-basis: calc(100% / 4 - 22.5px);
+  flex-basis: calc(100% / 4 - 24px);
 }
 .dignity-item:not(:last-child) {
   margin-right: 30px;
@@ -260,6 +269,10 @@ nav > .logo {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.paragraph.dignity {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Section specialization */
@@ -278,7 +291,9 @@ nav > .logo {
 .worker-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.worker-box {
+  padding: 30px 15px;
+}
 .worker-name {
   margin-bottom: 10px;
   color: var(--link-text-color);
@@ -289,15 +304,11 @@ nav > .logo {
   text-align: center;
 }
 .worker-speciality {
-  padding-bottom: 30px;
   color: var(--contact-link-text-color);
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-.worker-photo {
-  margin-bottom: 30px;
 }
 
 /* Portfolio page */
@@ -308,6 +319,7 @@ nav > .logo {
 }
 
 .button-filter {
+  padding: 6px 22px;
   background-color: var(--button-filter);
   color: var(--link-text-color);
 
@@ -315,6 +327,7 @@ nav > .logo {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border-radius: 4px;
 }
 .button-filter:hover {
   color: var(--white-color);
@@ -333,7 +346,6 @@ nav > .logo {
   background-color: var(--white-color);
   margin-right: 30px;
   margin-bottom: 30px;
-  outline: 1px solid #eeeeee;
 }
 .portfolio-list:nth-child(3n) {
   margin-right: 0px;
@@ -341,8 +353,12 @@ nav > .logo {
 .portfolio-list:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.portfolio-photo {
-  margin-bottom: 20px;
+
+.portfolio-box {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-item-title {
   margin-bottom: 4px;
